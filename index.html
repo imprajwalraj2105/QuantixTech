@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quantix Technologies</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+      (function(){
+        emailjs.init("zvTF6pJhKS39Tbu4f"); // Replace with your EmailJS Public Key
+      })();
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 60px 20px;
+      scroll-margin-top: 80px; /* Adds margin to accommodate fixed header */
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <img class="image-gradient" src="assets\gradient.png" alt="Gradient Image" />
+  <div class="layer-blur"></div>
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <img src="section_bg.png" alt="Quantix Logo" class="logo-image">
+        <h1 class="logo-text">Quantix Technologies</h1>
+      </div>
+
+      <nav class="nav-container">
+        <a href="#services" class="nav-item">Services</a>
+        <a href="#about" class="nav-item">About Us</a>
+        <a href="#contact" class="nav-item">Contact Us</a>
+        <a href="#clients" class="nav-item">Happy Clients</a>
+        <a href="#reach" class="nav-item">Reach Us</a>
+      </nav>
+      
+      <button class="btn-signing">Get Started</button>
+    </header>
+
+    <main>
+      <div class="div-content">
+        <div class="tag-box">
+          <div class="tag">Quantix</div>
+        </div>
+        <h1>Your Gateway to Tomorrow</h1>
+        <p class="description">
+          Transform your digital vision with Quantix!<br/>
+          We deliver sleek website and app development, custom software, reliable maintenance,<br/>
+          bold digital marketing, and powerful social media influence.
+        </p>
+        <div class="buttons">
+          <a href="#reach" class="btn-get-us">ReachUs</a>
+          <a href="#services" class="btn-services">Services</a>
+        </div>
+      </div>
+    </main>
+    <spline-viewer class="robot-3d" url="https://prod.spline.design/6IHqcXQUx6pQnAXH/scene.splinecode"></spline-viewer>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="section-header">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-description">Discover the cutting-edge services we offer to transform your business</p>
+    </div>
+    <div class="serivice_container">
+      <div class="service_box"><h2>Website Development</h2><p>We create stunning and responsive websites tailored to your needs.</p></div>
+      <div class="service_box"><h2>App Development</h2><p>Our team builds user-friendly mobile applications for all platforms.</p></div>
+      <div class="service_box"><h2>Maintenance</h2><p>Our maintenance services ensure your systems run smoothly and efficiently.</p></div>
+      <div class="service_box"><h2>Custom Software Solutions</h2><p>We develop bespoke software solutions to streamline your business processes.</p></div>
+      <div class="service_box"><h2>Digital Marketing</h2><p>Boost your online presence with our comprehensive digital marketing strategies.</p></div>
+      <div class="service_box"><h2>Social Media Influence</h2><p>We manage your social presence to enhance engagement and brand awareness.</p></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-header">
+      <h2 class="section-title">About Us</h2>
+      <p class="section-description">Learn more about our mission, vision, and what makes us unique</p>
+    </div>
+    <div class="about-boxes">
+      <div class="about-box">
+        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+        <div class="content">
+          <h2>About Quantix Technologies</h2>
+          <p>
+            Quantix Technologies is a dynamic, service-driven IT firm committed to delivering innovative, secure, and scalable digital solutions. 
+            We specialize in custom software development, mobile app creation, and comprehensive IT services, designed to empower businesses in today's fast-evolving digital landscape.
+            With cutting-edge technology, strategic innovation, and a future-focused approach, we help organizations unlock their full potential, 
+            enhance operational efficiency, and stay ahead in an increasingly competitive market. At Quantix, we don't just build solutions—we engineer success.
+          </p>
+        </div>
+      </div>
+      <div class="about-box">
+        <div class="icon">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <div class="content">
+          <h2>Our Vision</h2>
+          <ul class="vision-list">
+            <li>Creating a smarter, more connected future.</li>
+            <li>Empowering businesses with innovative software solutions.</li>
+            <li>Leading digital transformation with cutting-edge technologies.</li>
+            <li>Redefining industries and enhancing everyday experiences.</li>
+            <li>Engineering success beyond boundaries.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-header">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-description">Have a project in mind? Let's discuss how we can help bring your vision to life</p>
+    </div>
+    <div class="contact-container">
+      <form id="contactForm" class="quantix-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" required>
+          <label for="name">Your Name</label>
+          <div class="underline"></div>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" required>
+          <label for="email">Email</label>
+          <div class="underline"></div>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" required>
+          <label for="phone">Phone Number</label>
+          <div class="underline"></div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="company" name="company" required>
+          <label for="company">Company Name</label>
+          <div class="underline"></div>
+        </div>
+        <div class="form-group select-group">
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Website Development">Website Development</option>
+            <option value="App Development">App Development</option>
+            <option value="Custom Software Solutions">Custom Software Solutions</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Social Media Influence">Social Media Influence</option>
+          </select>
+          <label for="service"></label>
+          <div class="underline"></div>
+        </div>
+        <button type="submit" class="submit-btn">
+          <span>Send Message</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+      <div id="thankYouMessage" class="thank-you-message">
+        <div class="message-content">
+          <i class="fas fa-check-circle"></i>
+          <h3>Thank You!</h3>
+          <p>Your message has been sent successfully. Our team will contact you soon.</p>
+          <button id="newMessageBtn" class="new-message-btn">Send Another Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Happy Clients Section -->
+  <section id="clients" class="clients-section">
+    <div class="section-header">
+      <h2 class="section-title">Happy Clients</h2>
+      <p class="section-description">We have proudly served clients across industries and geographies.</p>
+    </div>
+    <div class="clients-container">
+      <div class="client-logo">
+        <img src="assets\skillfort.png" alt="Skillfort" loading="lazy">
+      </div>
+      <!-- You can add more client logos here as needed -->
+    </div>
+  </section>
+
+  <!-- Reach Us Section -->
+  <section id="reach" class="reach-section">
+    <div class="section-header">
+      <h2 class="section-title">Reach Us</h2>
+      <p class="section-description">You can find us at our offices, social handles, or via direct contact above.</p>
+    </div>
+
+    <div class="contact-details">
+      <div class="contact-item">
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/quantix_technologies?igsh=aGNudW1iNTI4M2Nv" target="_blank">Follow us on Instagram</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+919566938555">+91 95669 38555</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:quantixtechnologiess@gmail.com">quantixtechnologiess@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.91/build/spline-viewer.js"></script>
+  
+  <!-- Smooth scrolling script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all navigation links
+      const navLinks = document.querySelectorAll('a[href^="#"]');
+      
+      // Add click event listeners to each link
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // Smooth scroll to target
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Contact form handling
+      const form = document.getElementById('contactForm');
+      const thankYouMessage = document.getElementById('thankYouMessage');
+      const newMessageBtn = document.getElementById('newMessageBtn');
+
+      if (form) {
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+          emailjs.sendForm("service_91cub5a", "template_1fr7eb3", this)
+            .then(function() {
+              form.reset();
+              thankYouMessage.style.display = 'block';
+              form.style.display = 'none';
+            }, function(error) {
+              console.error('Failed to send message:', error);
+            });
+        });
+      }
+
+      if (newMessageBtn) {
+        newMessageBtn.addEventListener('click', function() {
+          thankYouMessage.style.display = 'none';
+          form.style.display = 'block';
+        });
+      }
+      
+      // Make the "Get Started" button scroll to contact section
+      const getStartedBtn = document.querySelector('.btn-signing');
+      if (getStartedBtn) {
+        getStartedBtn.addEventListener('click', function() {
+          const contactSection = document.querySelector('#contact');
+          if (contactSection) {
+            contactSection.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
