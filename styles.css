@@ -357,9 +357,10 @@ h1 {
 
 .section-description {
     font-size: 1.2rem;
-    color: gray;
-    max-width: 600px;
-    margin-bottom: 3rem;
+    max-width: 600px; /* Reduced from 800px to make lines shorter */
+    margin: 0 auto;
+    color: #cccccc;
+    text-align: center;
     line-height: 1.6;
 }
 
